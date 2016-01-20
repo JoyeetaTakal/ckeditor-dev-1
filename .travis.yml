@@ -1,11 +1,9 @@
-rvm: 2.0.0
+language: node_js
+node_js:
+  - "4.0"
 sudo: false
-
 before_install:
-  - "export DISPLAY=:99.0"
-  - "sh -e /etc/init.d/xvfb start"
-  
-before_script:
   - npm install -g benderjs-cli
-  - npm install -g phantomjs
+before_script:
   - bender init
+  - bender run -l
