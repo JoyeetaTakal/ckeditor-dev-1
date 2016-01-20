@@ -22,7 +22,8 @@
 		"cksource-samples-framework": "^1.0.1"
 	},
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+	    "start": "bender run -l",
+		"test": "bender run -b chrome"
 	},
 	"author": "CKSource (http://cksource.com/)",
 	"license": "For licensing, see LICENSE.md or http://ckeditor.com/license.",
